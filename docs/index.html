@@ -1,25 +1,156 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>CCLDR</title>
-<style>
-body{background:#0a0a0f;color:#e5e4e2;font-family:'Segoe UI',sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:2rem}
-h1{font-size:3rem;background:linear-gradient(135deg,#D4AF37,#50C878);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:0.5rem}
-.sub{color:#8892b0;margin-bottom:1rem}
-.btn-group{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
-.btn{padding:0.8rem 2rem;border-radius:100px;font-weight:700;text-decoration:none;transition:0.3s;border:none;cursor:pointer}
-.btn-primary{background:linear-gradient(135deg,#D4AF37,#50C878);color:#0a0a0f}
-.btn-primary:hover{transform:translateY(-3px)}
-.btn-outline{background:transparent;border:1px solid #D4AF37;color:#D4AF37}
-.footer{position:fixed;bottom:1rem;color:#404060;font-size:0.7rem}
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCLDR — Cannabis Legal Defense & Research</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:#0a0a0f;color:#e5e4e2;font-family:'Segoe UI',sans-serif;min-height:100vh}
+        .header{background:linear-gradient(135deg,#0a0a1a,#1a0a0a);padding:2rem;text-align:center;border-bottom:1px solid #D4AF37}
+        .header h1{font-size:3rem;background:linear-gradient(135deg,#D4AF37,#50C878);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .header .sub{color:#8892b0;font-size:1.1rem;letter-spacing:4px;margin-top:0.5rem}
+        .nav{display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem;padding:1rem;background:rgba(0,0,0,0.2);border-bottom:1px solid rgba(212,175,55,0.1)}
+        .nav a{color:#8892b0;text-decoration:none;padding:0.3rem 0.8rem;font-size:0.75rem;letter-spacing:2px;transition:color 0.3s}
+        .nav a:hover{color:#D4AF37}
+        .container{max-width:1200px;margin:0 auto;padding:1.5rem}
+        .section{margin-bottom:2rem}
+        .section h2{color:#D4AF37;font-size:1.5rem;border-bottom:1px solid rgba(212,175,55,0.1);padding-bottom:0.5rem;margin-bottom:1rem}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+        .card{background:rgba(17,34,64,0.3);border:1px solid rgba(212,175,55,0.05);border-radius:12px;padding:1rem;transition:0.3s}
+        .card:hover{border-color:rgba(212,175,55,0.2);transform:translateY(-2px)}
+        .card h3{color:#D4AF37;font-size:0.9rem;margin-bottom:0.3rem}
+        .card p{color:#8892b0;font-size:0.8rem}
+        .tier{display:inline-block;padding:0.2rem 1rem;border-radius:20px;font-size:0.6rem;font-weight:700;letter-spacing:2px;margin:0.2rem}
+        .tier-free{background:rgba(80,200,120,0.2);color:#50C878;border:1px solid rgba(80,200,120,0.3)}
+        .tier-pro{background:rgba(212,175,55,0.2);color:#D4AF37;border:1px solid rgba(212,175,55,0.3)}
+        .tier-vip{background:rgba(155,89,182,0.2);color:#9b59b6;border:1px solid rgba(155,89,182,0.3)}
+        .tier-emperor{background:rgba(255,107,157,0.2);color:#ff6b9d;border:1px solid rgba(255,107,157,0.3)}
+        .footer{text-align:center;padding:1.5rem;color:#404060;font-size:0.7rem;border-top:1px solid rgba(212,175,55,0.05)}
+        .footer .phoenix{color:#D4AF37;font-weight:700}
+        @media(max-width:768px){.header h1{font-size:2rem}}
+    </style>
 </head>
 <body>
-<h1>CCLDR</h1>
-<p class="sub">Cannabis Law — A Francisco Holdings Inc. Company</p>
-<div class="btn-group">
-<a href="https://franciscoholdingsinc.com/dashboard.html" class="btn btn-primary">Enter the Empire</a>
-<a href="#services" class="btn btn-outline">View Services</a>
-</div>
-<div class="footer">© 2026 Phoenix Dominion — Francisco Holdings Inc.</div>
+    <div class="header">
+        <h1>⚖️ CCLDR</h1>
+        <p class="sub">Cannabis Legal Defense & Research</p>
+        <p style="color:#606080;font-size:0.8rem;margin-top:0.5rem;letter-spacing:2px;">20+ Years of Constitutional Advocacy</p>
+    </div>
+
+    <div class="nav">
+        <a href="#constitutional">Constitutional</a>
+        <a href="#caselaw">Case Law</a>
+        <a href="#defence">Defence Kits</a>
+        <a href="#resources">Resources</a>
+        <a href="#acmpr">ACMPR</a>
+        <a href="#polcoa">POLCOA</a>
+        <a href="#tiers">Tiers</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="container">
+
+        <div class="section" id="constitutional">
+            <h2>🏛️ Constitutional Arguments</h2>
+            <div class="grid">
+                <div class="card"><h3>CDSA s.4 Invalidity</h3><p>Constitutional arguments against the Controlled Drugs and Substances Act section 4.</p></div>
+                <div class="card"><h3>s.7 Charter Breach</h3><p>Section 7 — Life, liberty, and security of the person.</p></div>
+                <div class="card"><h3>s.15 Charter Breach</h3><p>Section 15 — Equality rights and discrimination.</p></div>
+                <div class="card"><h3>180+ Constitutional Arguments</h3><p>Full library of constitutional challenges.</p></div>
+            </div>
+        </div>
+
+        <div class="section" id="caselaw">
+            <h2>⚖️ Landmark Case Law</h2>
+            <div class="grid">
+                <div class="card"><h3>Parker</h3><p>Ontario Court of Appeal — Medical marijuana exemption.</p></div>
+                <div class="card"><h3>J.P.</h3><p>Constitutional challenge.</p></div>
+                <div class="card"><h3>Hitzig</h3><p>Ontario Court of Appeal — Medical marijuana access.</p></div>
+                <div class="card"><h3>Sfetkopoulos</h3><p>Federal Court — Medical marijuana grow rights.</p></div>
+                <div class="card"><h3>Beren</h3><p>Constitutional challenge.</p></div>
+                <div class="card"><h3>Smith</h3><p>Supreme Court of Canada — Medical marijuana.</p></div>
+                <div class="card"><h3>Allard</h3><p>Federal Court — Medical marijuana access.</p></div>
+                <div class="card"><h3>Mernagh</h3><p>Ontario Superior Court — Medical marijuana.</p></div>
+                <div class="card"><h3>Barreau du Québec</h3><p>Legal profession and cannabis.</p></div>
+            </div>
+        </div>
+
+        <div class="section" id="defence">
+            <h2>🛡️ Defence Kits</h2>
+            <div class="grid">
+                <div class="card"><h3>5-Step Defence Kit</h3><p>Turmel's Anti-Marijuana-Prohibition process.</p></div>
+                <div class="card"><h3>Search Warrant Defence</h3><p>Full defence strategies.</p></div>
+                <div class="card"><h3>Telewarrant Defence</h3><p>Full defence strategies.</p></div>
+                <div class="card"><h3>Informant Defence</h3><p>Full defence strategies.</p></div>
+            </div>
+        </div>
+
+        <div class="section" id="resources">
+            <h2>📚 Resources</h2>
+            <div class="grid">
+                <div class="card"><h3>3,000+ Resources</h3><p>Full legal resource library.</p></div>
+                <div class="card"><h3>2,400+ Case Law Entries</h3><p>Comprehensive case law database.</p></div>
+                <div class="card"><h3>Cannabis Doctors</h3><p>Medical access information.</p></div>
+                <div class="card"><h3>Cannabis Seeds</h3><p>Full information.</p></div>
+                <div class="card"><h3>Disability</h3><p>Disability and cannabis access.</p></div>
+                <div class="card"><h3>LEAP</h3><p>Law Enforcement Against Prohibition.</p></div>
+            </div>
+        </div>
+
+        <div class="section" id="acmpr">
+            <h2>📋 ACMPR — Access to Cannabis for Medical Purposes Regulations</h2>
+            <div class="grid">
+                <div class="card"><h3>ACMPR Overview</h3><p>Full ACMPR information.</p></div>
+                <div class="card"><h3>Application Process</h3><p>How to apply.</p></div>
+                <div class="card"><h3>Federal Court Rulings</h3><p>Medical marijuana patient grow rights.</p></div>
+            </div>
+        </div>
+
+        <div class="section" id="polcoa">
+            <h2>👮 POLCOA — Peace Officers Legal Counsel of America</h2>
+            <div class="grid">
+                <div class="card"><h3>POLCOA Explained</h3><p>Full POLCOA information.</p></div>
+                <div class="card"><h3>POLCOA Warriors</h3><p>Full content.</p></div>
+            </div>
+        </div>
+
+        <div class="section" id="tiers">
+            <h2>🌟 Tiered Access</h2>
+            <div class="grid">
+                <div class="card"><h3>🌱 Seedling</h3><p>Free access to The Library — 3,000+ resources, 2,400+ case law entries.</p><span class="tier tier-free">FREE</span></div>
+                <div class="card"><h3>⚖️ Advocate</h3><p>$49/mo — 350+ court-ready motions, affidavits, Charter arguments.</p><span class="tier tier-pro">$49/mo</span></div>
+                <div class="card"><h3>🏛️ Counsel</h3><p>$149/mo — AI-powered consultation, VIP access, Doc WeedLaw's 20+ years.</p><span class="tier tier-vip">$149/mo</span></div>
+                <div class="card"><h3>👑 Emperor</h3><p>$499/mo — Inmate Academy, 80% discount, gift to loved ones inside.</p><span class="tier tier-emperor">$499/mo</span></div>
+            </div>
+        </div>
+
+        <div class="section" id="about">
+            <h2>📜 About CCLDR</h2>
+            <div class="card" style="max-width:800px;margin:0 auto;">
+                <p style="color:#8892b0;line-height:1.8;font-size:0.9rem;">
+                    CCLDR has been fighting for cannabis rights for over 20 years. 
+                    Perfect record. Trusted by thousands. 
+                    This is the original content — preserved and restored.
+                </p>
+                <p style="color:#8892b0;line-height:1.8;font-size:0.9rem;margin-top:0.5rem;">
+                    <strong style="color:#D4AF37;">22,000+ arrests</strong> cited. 
+                    <strong style="color:#D4AF37;">20+ years</strong> of constitutional advocacy.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div style="text-align:center;padding:1rem;">
+                <a href="https://www.paypal.com/paypalme/techpetcage" style="display:inline-block;padding:0.8rem 2rem;background:linear-gradient(135deg,#D4AF37,#50C878);color:#0a0a0f;text-decoration:none;border-radius:100px;font-weight:700;">💰 Support CCLDR</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 <span class="phoenix">Phoenix Dominion</span> — Francisco Holdings Inc.</p>
+        <p style="color:#404040;font-size:0.6rem;margin-top:0.3rem;">Derek Francisco is a legal educator, not a lawyer. No legal advice.</p>
+    </div>
 </body>
 </html>
